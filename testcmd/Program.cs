@@ -23,9 +23,9 @@ namespace testcmd
             process.StandardInput.WriteLine(ConsoleKey.Enter);
             process.StandardInput.WriteLine("cd vue_app");
             process.StandardInput.WriteLine("pnpm install");
-            //process.StandardInput.WriteLine("code .");
-            process.StandardInput.WriteLine("pnpm run dev");
-            process.StandardInput.WriteLine("start msedge http://localhost:5173/");
+            //process.StandardInput.WriteLine("pnpm run dev");
+            //process.StandardInput.WriteLine("start msedge http://localhost:5173/");
+            process.StandardInput.WriteLine("code .");
             process.StandardInput.Flush();
             process.StandardInput.Close();
             process.StandardOutput.ReadToEnd();
